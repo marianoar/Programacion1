@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1555370980 source:e:\labo i\clase 8 estructura de datos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+
+1555370166 source:e:\labo i\clase 8 estructura de datos\persona.c
+
+1555371448 e:\labo i\clase 8 estructura de datos\persona.h
+

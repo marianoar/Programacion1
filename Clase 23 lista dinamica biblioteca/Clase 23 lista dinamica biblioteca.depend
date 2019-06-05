@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1559693392 source:e:\clase 23 lista dinamica biblioteca\people.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"People.h"
+
+1559689438 e:\clase 23 lista dinamica biblioteca\utn.h
+
+1559693332 e:\clase 23 lista dinamica biblioteca\people.h
+
+1559694252 source:e:\clase 23 lista dinamica biblioteca\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"People.h"
+
+1559693428 source:e:\clase 23 lista dinamica biblioteca\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+

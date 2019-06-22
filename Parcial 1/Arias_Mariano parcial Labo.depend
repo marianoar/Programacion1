@@ -1,0 +1,127 @@
+# depslib dependency file v1.0
+1560097426 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1560095140 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\utn.h
+
+1559678244 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\entidades.h
+
+1559678294 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1560095594 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1559679682 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\funcionesgeneral.h
+
+1559679772 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\funcionesgeneral.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1559765096 source:g:\arias_mariano parcial labo\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1559765096 g:\arias_mariano parcial labo\utn.h
+
+1559678244 g:\arias_mariano parcial labo\entidades.h
+
+1559679682 g:\arias_mariano parcial labo\funcionesgeneral.h
+
+1559678624 source:g:\arias_mariano parcial labo\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1559678294 source:g:\arias_mariano parcial labo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1559679772 source:g:\arias_mariano parcial labo\funcionesgeneral.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1560097426 source:e:\arias_mariano parcial labo\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1560095140 e:\arias_mariano parcial labo\utn.h
+
+1559678244 e:\arias_mariano parcial labo\entidades.h
+
+1559679682 e:\arias_mariano parcial labo\funcionesgeneral.h
+
+1559679772 source:e:\arias_mariano parcial labo\funcionesgeneral.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1559678294 source:e:\arias_mariano parcial labo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1560095594 source:e:\arias_mariano parcial labo\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+

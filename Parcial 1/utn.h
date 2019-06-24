@@ -22,4 +22,5 @@ char getCharSexo(void);
 int getIntLimitado(char mensaje[], char eMensaje[], int lowLimit, int highLimit);
 
 int checkMail(char aux[]);
+float dividir( int a, int b);
 

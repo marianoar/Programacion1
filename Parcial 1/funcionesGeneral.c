@@ -15,7 +15,7 @@ return opcion;
 }
 
 void menuAutor(Author autores[], int CANT){
-    int opcion, p;
+    int opcion,p;
     system("cls");
 do{
     printf("\n\n\tMenu Autores\n");
@@ -63,7 +63,7 @@ switch (aux){
     case 3:
         break;
     case 4:
-        ordenarBooks(libros,CANT);
+        ordenarBooks(libros,CANT,1);
         p=printBooks(libros, autores, CANT);
         break;
     case 0:
@@ -82,13 +82,13 @@ return;
 
 void menuSocios(Socio socios[], Book libros[], Author autores[], Prestamo prestamos[],int CANT, int sociosId, int prestamosId){
     int opcion, auxAlta, auxModify, auxBaja, auxPrestamos;
-    int flagAlta=1;//por que setee socio
+    int flagAlta=1;//La dejo en uno por que ya setee socios
     int p;
 
     system("cls");
    do{
         printf("\n\n\t Menu Socios");
-        opcion=getIn("\n\n 1.- Alta \n 2.- Modificar\n 3.- Baja\n 4.- Listar Socios\n 5.- Listar Libros\n 6.- Listar Autores\n 7.- Prestamos\n\n 0.- Volver\n\n Su opcion: ");
+        opcion=getIn("\n\n 1.- Alta \n 2.- Modificar\n 3.- Baja\n 4.- Listar Socios (por burbujeo ascendente)\n 5.- Listar Libros (ascendente)\n 6.- Listar Autores\n 7.- Prestamos e Informes\n\n 0.- Volver\n\n Su opcion: ");
         switch(opcion){
         case 1:
             auxAlta=addSocio(socios, CANT, sociosId);
@@ -107,6 +107,7 @@ void menuSocios(Socio socios[], Book libros[], Author autores[], Prestamo presta
                 break;
             }
 
+            auxModify=modifySocio(socios, CANT);
             if(auxModify){
                 printf("\n Modificacion exitosa");
             }else {
@@ -119,12 +120,11 @@ void menuSocios(Socio socios[], Book libros[], Author autores[], Prestamo presta
                 break;
             }
             auxBaja=killSocio(socios, CANT);
-            if(auxBaja){
+            if(auxBaja==1){
                 printf("\n Baja exitosa");
             }else {
-            printf("\nSe ha producido un error. ");
+            printf("\nSe ha producido un error. Baja no realizada ");
             }
-
         break;
         case 4:
 
@@ -135,7 +135,7 @@ void menuSocios(Socio socios[], Book libros[], Author autores[], Prestamo presta
             p=printSocios(socios,CANT);
         break;
         case 5:
-            ordenarBooks(libros,CANT);
+            ordenarBooks(libros,CANT,1);
             p=printBooks(libros, autores, CANT);
         break;
         case 6:
@@ -167,75 +167,31 @@ printf("Ingrese fecha Prestamos:\n");
     prestamos[aux].fechaPrestamo.mes = getIntLimitado( "\nIngrese el mes: " , "\nMes fuera de rango, ingrese nuevamente:  " , 1 , 12 );
     prestamos[aux].fechaPrestamo.anio = getIntLimitado( "\nIngrese el anio (entre 2000 - 2050): " , "\nAnio fuera de rango, ingrese nuevamente: " , 2000 , 2050);
 }
+
 int menuModificar(){
 int a;
 a=getIn("\n Que dato desea modificar?\n\t\tIngrese:\n\t1.- Apellido\n\t2.- Nombre\n\t3.- Sexo\n\t4.- Telefono\n\t5.- Correo\n\n\t0.- Volver\n Elija opcion a modificar: ");
 return a;
 }
 
-void menuListarPrestamos(Prestamo prestamos[], int CANT){
-int i;
-printf("\n\n\tId Prestamo\tCodigo libro \t Codigo Socio\t Fecha Prestamo ");
-for (i=0;i<CANT;i++){
-    if(prestamos[i].estado){
-        printf("\n\t%d\t\t%d\t\t%d\t\t%d-%d-%d",prestamos[i].idPrestamo,prestamos[i].idBook,prestamos[i].idSocio,prestamos[i].fechaPrestamo.dia,prestamos[i].fechaPrestamo.mes,prestamos[i].fechaPrestamo.anio);
-    }
-}
 
-}
-
-void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores[], Socio socios[], int CANT, int prestamosId){
-    int auxPrestamos;
+int mostrarMenuPrestamos(){
     int opcion;
     system("cls");
-    printf("\n\tMenu Prestamos\n");
-    printf(" 1.- Alta de prestamo\n");
-    printf(" 2.- Listar todos los prestamos\n");
-    printf("  3.- \n");
-    printf(" 4.- \n");
-    printf(" 5.- \n");
-    printf(" 6.- \n");
-    printf(" 7.- \n");
-    printf(" 8.- \n");
-    printf(" 9.- \n");
-    printf(" 10.- \n");
-    printf(" 11.- \n\n");
+    printf("\n\n\tMenu Prestamos\n");
+    printf("\n  1.- Alta de prestamo\n");
+    printf("  2.- Listar todos los prestamos\n");
+    printf("  3.- informar el total general  y promedio diario de las solicitudes a prestamo de los libros. \n");
+    printf("  4.- Informar la cantidad de dias cuya solicitud a prestamo no superan  el promedio del dia anterior.\n");
+    printf("  5.- Listar todos los socios que solicitaron el prestamo de un libro determinado.\n");
+    printf("  6.- Listar todos los libros que fueron solicitados a prestamo por un socio determinado.\n");
+    printf("  7.- Listar el o los libros menos solicitados en prestamo.\n");
+    printf("  8.- Listar el o los socios que realizo mas solicitudes a prestamo.\n");
+    printf("  9.- Listar todos los libros solicitadosa prestamo en una fecha determinada\n");
+    printf(" 10.- Listar todos los socios que realizaron al menos una solicitud a prestamo en una fecha determinada. \n");
+    printf(" 11.- Listar todos los libros ordenados por titulo (descendente), utilizando el metodo de burbujeo mas eficiente.\n");
+    printf(" 12.- Listar todos los socios ordenados por Apellido (ascendente ) utilizando el metodo de insercion.\n\n");
     printf(" 0.- Volver");
     opcion=getIn("\n\nIngrese opcion: ");
-    switch(opcion){
-    case 1:
-        auxPrestamos=addPrestamo(prestamos, socios, autores, libros, CANT, prestamosId);
-        if (auxPrestamos){
-            printf("\nSe ha registrado el Prestamo:\n");
-            prestamosId++;
-            }else {
-            printf("\nNo se ha registrado el prestamo.");
-        }
-    break;
-    case 2:
-        menuListarPrestamos(prestamos, CANT);
-    break;
-    case 3:
-    break;
-    case 4:
-    break;
-    case 5:
-    break;
-    case 6:
-    break;
-    case 7:
-    break;
-    case 8:
-    break;
-    case 9:
-    break;
-    case 10:
-    break;
-    case 11:
-    break;
-    case 12:
-    break;
-
-    }
-return;
+    return opcion;
 }

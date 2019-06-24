@@ -267,4 +267,8 @@ for(i = 0; email[i]; i++){
 return 0;
 }
 
-
+float dividir( int a, int b) {
+float cuenta;
+cuenta=a/b;
+return cuenta;
+}

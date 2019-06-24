@@ -48,13 +48,25 @@ void setSocio(Socio socio[], int i, int id, char lastName[],char name[], char se
 void setPrestamo (Prestamo prestamos[], int i,int idP, int  idB, int idS, int dia, int mes, int anio, int estado);
 
 int addSocio (Socio socios[], int CANT,int socioId);
+int modifySocio (Socio socios[], int CANT);
 int ordenarSocios(Socio socios[],int CANT);
 int printSocios (Socio socios[], int CANT);
 void ordenarAuthor(Author autores[],int CANT);
+void ordenarSociosPorInsercion(Socio socios[], int CANT);
 int printAutor (Author autores[], int CANT);
 int printBooks (Book libros[], Author autores[], int CANT);
-void ordenarBooks (Book libros[],int CANT);
+/** \brief ordeno los libros
+ *
+ * \param strucura Book libros
+ * \param CANT es un define con el largo del array
+ * \param order 1 o 0 para ascendente o descendente respectivamente.
+ * \return void
+ *
+ */
+
+ void printPrestamos(Prestamo prestamos[], Book libros[], Author autores[], Socio socios[],  int CANT);
+void ordenarBooks (Book libros[],int CANT, int order);
 int addPrestamo(Prestamo prestamos[],Socio socios[],Author autores[],Book libros[],int CANT, int idPrestamo);
 
 int killSocio (Socio socios[], int CANT);
-
+void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores [], Socio socios[],int CANT, int prestamosId);

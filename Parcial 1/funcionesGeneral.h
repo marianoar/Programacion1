@@ -7,6 +7,6 @@ void menuSocios(Socio socios[], Book libros[], Author autores[],Prestamo prestam
 void ingresoFecha( Socio asociados[], int aux );
 void fechaPrestamo( Prestamo prestamos[], int aux );
 int menuModificar();
+int mostrarMenuPrestamos();
 
-void menuListarPrestamos(Prestamo prestamos[], int CANT);
-void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores [], Socio socios[], int CANT, int prestamosId);
+

@@ -83,7 +83,7 @@
 	"entidades.h"
 	"funcionesGeneral.h"
 
-1560097426 source:e:\arias_mariano parcial labo\entidades.c
+1561401076 source:e:\arias_mariano parcial labo\entidades.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -92,13 +92,13 @@
 	"entidades.h"
 	"funcionesGeneral.h"
 
-1560095140 e:\arias_mariano parcial labo\utn.h
+1561321140 e:\arias_mariano parcial labo\utn.h
 
-1559678244 e:\arias_mariano parcial labo\entidades.h
+1561401076 e:\arias_mariano parcial labo\entidades.h
 
-1559679682 e:\arias_mariano parcial labo\funcionesgeneral.h
+1561385036 e:\arias_mariano parcial labo\funcionesgeneral.h
 
-1559679772 source:e:\arias_mariano parcial labo\funcionesgeneral.c
+1561385036 source:e:\arias_mariano parcial labo\funcionesgeneral.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -107,7 +107,7 @@
 	"entidades.h"
 	"funcionesGeneral.h"
 
-1559678294 source:e:\arias_mariano parcial labo\main.c
+1561391116 source:e:\arias_mariano parcial labo\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -116,7 +116,7 @@
 	"entidades.h"
 	"funcionesGeneral.h"
 
-1560095594 source:e:\arias_mariano parcial labo\utn.c
+1561321126 source:e:\arias_mariano parcial labo\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

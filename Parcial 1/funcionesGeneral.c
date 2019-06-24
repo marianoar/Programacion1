@@ -6,77 +6,12 @@
 #include "entidades.h"
 #include "funcionesGeneral.h"
 
-int menuInicio (void){
-int opcion;
-printf("\n\tMenu Inicio\n");
-printf("\n 1.- Autores\n 2.- Libros\n 3.- Socios\n 0.- Salir");
-opcion=getIn("\n\nIngrese opcion: ");
-return opcion;
-}
 
-void menuAutor(Author autores[], int CANT){
-    int opcion,p;
-    system("cls");
-do{
-    printf("\n\n\tMenu Autores\n");
-    printf("\n 1.- Alta\n 2.- Baja\n 3.- Modificar \n 4.- Listar\n 0.- Volver");
-    opcion=getIn("\n\nIngrese opcion: ");
-switch (opcion){
-    case 1:
-        break;
-    case 2:
-        break;
-    case 3:
-        break;
-    case 4:
-        ordenarAuthor(autores,CANT);
-        p=printAutor(autores,CANT);
-        break;
-    case 0:
-        return;
-    }
-}while(opcion!=0);
-
-return;
-}
-/** \brief
+/** \brief Menu inicial
  *
+ * \param todas las variables estructuras, largo e Ids
  * \param
- * \param
- * \return
- *
- */
-
-void menuLibros(Book libros[], Author autores[], int CANT){
-    int aux,p;
-    system("cls");
-
-do{
-            printf("\n\n\tMenu Libros");
-printf("\n\n 1.- Alta\n 2.- Baja\n 3.- Modificar \n 4.- Listar\n 0.- Volver");
-    aux=getIn("\n\nIngrese opcion: ");
-switch (aux){
-    case 1:
-        break;
-    case 2:
-        break;
-    case 3:
-        break;
-    case 4:
-        ordenarBooks(libros,CANT,1);
-        p=printBooks(libros, autores, CANT);
-        break;
-    case 0:
-        return;
-    }
-}while(aux!=0);
-return;
-}
-/** \brief
- *
- * \param
- * \param
- * \return
+ * \return void
  *
  */
 
@@ -88,7 +23,7 @@ void menuSocios(Socio socios[], Book libros[], Author autores[], Prestamo presta
     system("cls");
    do{
         printf("\n\n\t Menu Socios");
-        opcion=getIn("\n\n 1.- Alta \n 2.- Modificar\n 3.- Baja\n 4.- Listar Socios (por burbujeo ascendente)\n 5.- Listar Libros (ascendente)\n 6.- Listar Autores\n 7.- Prestamos e Informes\n\n 0.- Volver\n\n Su opcion: ");
+        opcion=getIn("\n\n 1.- Alta \n 2.- Modificar\n 3.- Baja\n 4.- Listar Socios\n 5.- Listar Libros\n 6.- Listar Autores\n 7.- Prestamos e Informes\n\n 0.- Volver\n\n Su opcion: ");
         switch(opcion){
         case 1:
             auxAlta=addSocio(socios, CANT, sociosId);
@@ -153,6 +88,13 @@ void menuSocios(Socio socios[], Book libros[], Author autores[], Prestamo presta
    }while (opcion!=0);
     return;
 }
+/** \brief
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
 
 void ingresoFecha( Socio asociados[], int aux )
 {
@@ -161,12 +103,27 @@ void ingresoFecha( Socio asociados[], int aux )
     asociados[aux].fechaIngreso.mes = getIntLimitado( "\nIngrese el mes: " , "\nMes fuera de rango, ingrese nuevamente:  " , 1 , 12 );
     asociados[aux].fechaIngreso.anio = getIntLimitado( "\nIngrese el anio (entre 1990 - 2020): " , "\nAnio fuera de rango, ingrese nuevamente: " , 1990 , 2020);
 }
+/** \brief
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
 void fechaPrestamo( Prestamo prestamos[], int aux ){
 printf("Ingrese fecha Prestamos:\n");
     prestamos[aux].fechaPrestamo.dia = getIntLimitado( "\nIngrese el dia: " , "\nDia fuera de rango, ingrese nuevamente: " , 1 , 31 );
     prestamos[aux].fechaPrestamo.mes = getIntLimitado( "\nIngrese el mes: " , "\nMes fuera de rango, ingrese nuevamente:  " , 1 , 12 );
     prestamos[aux].fechaPrestamo.anio = getIntLimitado( "\nIngrese el anio (entre 2000 - 2050): " , "\nAnio fuera de rango, ingrese nuevamente: " , 2000 , 2050);
 }
+/** \brief Menu para modificar datos de socio
+ *
+ * \param void
+ * \param
+ * \return retorna int a con opcion elegida
+ *
+ */
 
 int menuModificar(){
 int a;
@@ -174,6 +131,13 @@ a=getIn("\n Que dato desea modificar?\n\t\tIngrese:\n\t1.- Apellido\n\t2.- Nombr
 return a;
 }
 
+/** \brief Muestra menu de prestamos e informes
+ *
+ * \param
+ * \param
+ * \return int con la opcion elegida
+ *
+ */
 
 int mostrarMenuPrestamos(){
     int opcion;

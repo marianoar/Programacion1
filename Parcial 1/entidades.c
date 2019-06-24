@@ -6,30 +6,69 @@
 #include "entidades.h"
 #include "funcionesGeneral.h"
 
+/** \brief inicializa estructura a estado 0
+ *
+ * \param
+ * \param
+ * \return void
+ *
+ */
+
 void inicializarAuthor(Author autores[],int largo, int valor){
     int i;
     for (i=0;i<largo;i++){
                 autores[i].estado=valor;
     }
 }
+/** \brief inicializa la estructura a estado 0
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
 void inicializarBook (Book libros[],int largo, int valor){
     int i;
     for (i=0;i<largo;i++){
                 libros[i].estado=valor;
     }
 }
+/** \brief inicializa la estructura a estado 0
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
 void inicializarSocio (Socio socios[],int largo, int valor){
     int i;
     for (i=0;i<largo;i++){
                 socios[i].estado=valor;
     }
 }
+/** \brief inicializa la estructura a estado 0
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
 void inicializarPrestamo (Prestamo prestamos[],int largo, int valor){
     int i;
     for (i=0;i<largo;i++){
                 prestamos[i].estado=valor;
     }
 }
+/** \brief setea valores en estructura
+ *
+ * \param recibe la estructura y los valores a setear en los campos
+ * \param
+ * \return
+ *
+ */
 
 void setBook(Book libros[], int i,int id, char titulo[], int authorId, int estado){
     libros[i].idBook=id;
@@ -37,6 +76,13 @@ void setBook(Book libros[], int i,int id, char titulo[], int authorId, int estad
     libros[i].authorId=authorId;
     libros[i].estado=estado;
 }
+/** \brief recibe la estructura y los valores a setear en los campos
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
 
 void setAuthor (Author autores[],int i, int id, char lastName[], char name[],int estado){
     autores[i].idAuthor=id;
@@ -44,6 +90,14 @@ void setAuthor (Author autores[],int i, int id, char lastName[], char name[],int
     strcpy(autores[i].authorName, name);
     autores[i].estado=estado;
 }
+/** \brief recibe la estructura y los valores a setear en los campos
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
 void setSocio(Socio socio[], int i, int id, char lastName[],char name[], char sexo, char telefono [], char correo[], int dia, int mes, int anio,  int estado){
     socio[i].id=id;
     strcpy(socio[i].apellido,lastName);
@@ -56,6 +110,13 @@ void setSocio(Socio socio[], int i, int id, char lastName[],char name[], char se
     socio[i].fechaIngreso.anio=anio;
     socio[i].estado=estado;
 }
+/** \brief recibe la estructura y los valores a setear en los campos
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
 
 void setPrestamo (Prestamo prestamos[], int i,int idP, int  idB, int idS, int dia, int mes, int anio, int estado){
     prestamos[i].idPrestamo=idP;
@@ -66,6 +127,14 @@ void setPrestamo (Prestamo prestamos[], int i,int idP, int  idB, int idS, int di
     prestamos[i].fechaPrestamo.anio=anio;
     prestamos[i].estado=estado;
 }
+/** \brief Agrega un socio nuevo
+ *
+ * \param Estructura
+ * \param CANT es largo
+ * \param recibe el id a asignar q es autoincremental
+ * \return 1 para exito
+ *
+ */
 
 int addSocio (Socio socio[], int CANT, int socioId){
 char aux[31];
@@ -105,7 +174,7 @@ int i;
                 }
                 strcpy(socio[i].telefono, aux);
 
-                getString("\nIngrese Correo electronico: ",aux);
+                getString("\nIngrese Correo electronico (valido por arroba): ",aux);
 
                 if(!checkLenght(aux,31)){
                     printf("Excedio el numero de caracteres");
@@ -253,6 +322,13 @@ int ordenarSocios(Socio socios[],int CANT){
     }
 return 1;
 }
+/** \brief ordena por metodo de insercion
+ *
+ * \param
+ * \param
+ * \return void
+ *
+ */
 
 void ordenarSociosPorInsercion(Socio socios[], int CANT){
     int i,j;
@@ -268,6 +344,13 @@ void ordenarSociosPorInsercion(Socio socios[], int CANT){
 }
 return;
 }
+/** \brief recibe variable estrucura y largo e imprime
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
 
 int printSocios (Socio socios[], int CANT){
     int i;
@@ -282,6 +365,14 @@ int printSocios (Socio socios[], int CANT){
         }
 return 1;
 }
+/** \brief ordeno por burbujeo
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
 void ordenarAuthor(Author autores[],int CANT){
     Author Aux;
     int i,j;
@@ -315,6 +406,13 @@ void ordenarAuthor(Author autores[],int CANT){
         }
     }
 }
+/** \brief recibe variable y largo e imprime
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
 
 int printAutor (Author autores[], int CANT){
     int i;
@@ -329,6 +427,14 @@ int printAutor (Author autores[], int CANT){
         }
 return 1;
 }
+/** \brief recibe variable y largo e imprime
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
 int printBooks (Book libros[], Author autores[], int CANT){
     int i,j;
     system("cls");
@@ -346,6 +452,13 @@ int printBooks (Book libros[], Author autores[], int CANT){
         }
 return 1;
 }
+/** \brief  REcibe todas las estructuras por que busco por id en las otras estructuras ,a partir de los prestamos, para mostrar
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
 
 void printPrestamos(Prestamo prestamos[], Book libros[], Author autores[],  Socio socios[], int CANT){
     int i, j, h;
@@ -366,11 +479,11 @@ void printPrestamos(Prestamo prestamos[], Book libros[], Author autores[],  Soci
         }
     }
 }
-/** \brief
+/** \brief Ordeno estructura libros
  *
  * \param
  * \param order 0 para descendente y 1 para ascendente
- * \return
+ * \return void
  *
  */
 
@@ -439,6 +552,14 @@ void ordenarBooks (Book libros[],int CANT, int order){
         flag=0;
     }
 }
+/** \brief Agrego la ocurrencia de prestamo
+ *
+ * \param
+ * \param
+ * \return 1 si lo hizo , 0 si no lo realizo.
+ *
+ */
+
 int addPrestamo(Prestamo prestamos[],Socio socios[],Author autores[],Book libros[],int CANT, int idPrestamo){
 int i,j, auxId, auxBook;
 int flagSocio=0;
@@ -531,27 +652,33 @@ int i, auxBajaInt;
 return -1;
 }
 
-
+/** \brief Entro a menu prestamo para hacer los informes a partir del swicht
+ *
+ * \param recibe todas las variables estructuras
+ * \param
+ * \return FALTa CONVERTIR CADA INFORME EN una funcion
+ *
+ */
 void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores[], Socio socios[], int CANT, int prestamosId){
     int auxPrestamos,i, j,dia, mes, anio, idAuxSearch, opcion;
     int fechas;
-    char idSearch[3];
+    char idSearch[4];
     Prestamo eAux;
+    Socio aux;
+    Book auxBook;
     int activeLenght=0;
     int contadorFechasRepet=0;
-   // int auxiliar[CANT];
-   // int contador[CANT];
 
     float promedio;
-   int auxCont;
-  //  int auxiliarSimple;
+    int auxCont, flag, mayor, menor;
+
 
     opcion=mostrarMenuPrestamos();
     switch(opcion){
     case 1:
         auxPrestamos=addPrestamo(prestamos, socios, autores, libros, CANT, prestamosId);
         if (auxPrestamos){
-            printf("\nSe ha registrado el Prestamo:\n");
+            printf("\nSe ha registrado el Prestamo.\n");
             prestamosId++;
             }else {
             printf("\nNo se ha registrado el prestamo.");
@@ -578,6 +705,7 @@ void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores[], Socio 
          printf("\nEl promedio de prestamos por fecha es: %.2f",promedio);
     break;
     case 4:
+        printf("\n Informe no realizado.");
 
 
     break;
@@ -615,30 +743,26 @@ void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores[], Socio 
         }
 
     break;
-    case 7:
-
-         for(i=0; i < CANT - 1; i++){
-            if(prestamos[i].estado== 0){
-            continue;
-            }
-            for(j=i+1; j < CANT; j++){
-                if(prestamos[j].estado== 0){
-                continue;
-                }
-                if(prestamos[i].idSocio>prestamos[j].idSocio){
-                    eAux = prestamos[j];
-                    prestamos[j] = prestamos[i];
-                    prestamos[i] = eAux;
-                }else if(prestamos[i].idSocio==prestamos[j].idSocio){
-                    if(prestamos[i].idPrestamo>prestamos[j].idPrestamo){
-                        eAux = prestamos[j];
-                        prestamos[j] = prestamos[i];
-                        prestamos[i] = eAux;
+    case 7: //Listar libro menos prestado
+        flag=0;
+        auxCont=0;
+        menor=0;
+        for(i=0;i<CANT;i++){
+            auxCont=0;
+            for(j=0;j<CANT;j++){
+                    if(libros[i].idBook==prestamos[j].idBook){
+                        auxCont++;
                     }
                 }
-            }
-        }
-printPrestamos(prestamos,libros,autores,socios,CANT);
+                if(flag==0 || auxCont<menor){
+                        menor=auxCont;
+                        auxBook=libros[i];
+                        flag=1;
+                        }
+                    }
+        system("cls");
+        printf("\n Libro con menos solicitud de prestamo:\n Id: %d - Titulo : %s - Cantidad de prestamos: %d",auxBook.idBook, auxBook.title,menor);
+
 
 
     break;
@@ -649,20 +773,29 @@ printPrestamos(prestamos,libros,autores,socios,CANT);
                 activeLenght++;
             }
         }
-        auxCont=0;
+        flag=0;
+
         system("cls");
         printf("Prestamos activos: %d",activeLenght);
 
         for(i=0;i<activeLenght;i++){
-            for(j=i+1;j<activeLenght;j++){
-                if(prestamos[i].idSocio==prestamos[j].idSocio){
-                    printf("\n Socios que realizaron mas de un prestamo: %d ",prestamos[i].idSocio);
-
+            auxCont=0;
+            for(j=0;j<activeLenght;j++){
+                if(socios[i].id==prestamos[j].idSocio){
+                  //  printf("\n Socios que realizaron mas de un prestamo: %d ",prestamos[i].idSocio);
                     auxCont++;
                 }
             }
+            if(auxCont>0){
+                if(flag==0 || auxCont>mayor){
+                    mayor=auxCont;
+                    aux=socios[i];
+                    flag=1;
+                }
+            }
         }
-        printf("\n cantidad de prestamos x socio repetido: %d ",auxCont);
+        system("cls");
+        printf("\n Socio que retiro mas libros: \n Id: %d - Apellido: %s - Cantidad de prestamos: %d",aux.id,aux.apellido,mayor);
 
     break;
     case 9: // Listar libros prestados en una fecha especifica

@@ -55,22 +55,7 @@ int main(){
     setPrestamo(prestamos,9,10,101,103,29,5,2019,1);
 
     menuSocios(socios, libros, autores, prestamos, CANT, sociosId, prestamosId);
-  /*  do{
-        system("cls");
-        opcionInicio=menuInicio();
-        switch (opcionInicio){
-    case 1:
-        menuAutor(autores, CANT);
-        break;
-    case 2:
-        menuLibros(libros, autores, CANT);
-        break;
-    case 3:
-        menuSocios(socios, libros, autores, prestamos, CANT, sociosId, prestamosId);
-        break;
-        }
 
-    }while (opcionInicio!=0);*/
 
     return 0;
 }

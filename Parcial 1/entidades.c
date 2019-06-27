@@ -461,7 +461,7 @@ return 1;
  */
 
 void printPrestamos(Prestamo prestamos[], Book libros[], Author autores[],  Socio socios[], int CANT){
-    int i, j, h;
+    int i, j;
     char auxBook[30];
     char auxSocio[30];
     printf("\n\n\tId Prestamo\tIdBook - Titulo \t\t Socio: Id - Apellido\t Fecha Prestamo ");
@@ -656,14 +656,15 @@ return -1;
  *
  * \param recibe todas las variables estructuras
  * \param
- * \return FALTa CONVERTIR CADA INFORME EN una funcion
+ * \return FALTo CONVERTIR CADA INFORME EN una funcion
  *
  */
 void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores[], Socio socios[], int CANT, int prestamosId){
     int auxPrestamos,i, j,dia, mes, anio, idAuxSearch, opcion;
     int fechas;
+    int contador=0;
     char idSearch[4];
-    Prestamo eAux;
+   // Prestamo eAux;
     Socio aux;
     Book auxBook;
     int activeLenght=0;
@@ -705,7 +706,22 @@ void menuPrestamos(Prestamo prestamos[], Book libros[], Author autores[], Socio 
          printf("\nEl promedio de prestamos por fecha es: %.2f",promedio);
     break;
     case 4:
-        printf("\n Informe no realizado.");
+         for(i=0;i<CANT-1;i++){
+            if(prestamos[i].estado==1){
+               // activeLenght++;
+            for(j=i+1;j<CANT;j++){
+                if(prestamos[i].fechaPrestamo.dia==prestamos[j].fechaPrestamo.dia && prestamos[i].fechaPrestamo.mes==prestamos[j].fechaPrestamo.mes && prestamos[i].fechaPrestamo.anio==prestamos[j].fechaPrestamo.anio){
+                 contadorFechasRepet++;
+                 if(contadorFechasRepet<promedio){
+                    contador++;
+                }
+            }
+            }
+        }
+         }
+        printf("\nLa cantidad de fechas que no superan el promedio es: %d",contador);
+//        printf("\nLa cantidad total de fechas es: %d",contadorFechas);
+
 
 
     break;

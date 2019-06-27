@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1561335292 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\entidades.c
+1561604235 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\entidades.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -8,11 +8,11 @@
 	"entidades.h"
 	"funcionesGeneral.h"
 
-1561321138 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\utn.h
+1561321140 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\utn.h
 
-1561324906 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\entidades.h
+1561401076 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\entidades.h
 
-1561323941 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\main.c
+1561391116 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -21,7 +21,7 @@
 	"entidades.h"
 	"funcionesGeneral.h"
 
-1561321125 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\utn.c
+1561321126 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -30,9 +30,9 @@
 	"entidades.h"
 	"funcionesGeneral.h"
 
-1561251973 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\funcionesgeneral.h
+1561385036 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\funcionesgeneral.h
 
-1561329737 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\funcionesgeneral.c
+1561385036 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo\funcionesgeneral.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -117,6 +117,48 @@
 	"funcionesGeneral.h"
 
 1561321126 source:e:\arias_mariano parcial labo\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1561604235 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo 1 f\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1561321140 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo 1 f\utn.h
+
+1561401076 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo 1 f\entidades.h
+
+1561385036 c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo 1 f\funcionesgeneral.h
+
+1561385036 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo 1 f\funcionesgeneral.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1561391116 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo 1 f\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"entidades.h"
+	"funcionesGeneral.h"
+
+1561321126 source:c:\users\compa\desktop\utn\labo i\arias_mariano parcial labo 1 f\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

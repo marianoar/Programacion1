@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1562887774 source:e:\ariasmarianorsp\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1561123860 e:\ariasmarianorsp\utn.h
+
+1562886866 e:\ariasmarianorsp\linkedlist.h
+
+1562885516 e:\ariasmarianorsp\entidades.h
+
+1562887606 source:e:\ariasmarianorsp\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1562888164 source:e:\ariasmarianorsp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1562881842 source:e:\ariasmarianorsp\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1563463867 source:c:\users\compa\desktop\utn\labo i\ariasmarianorsp\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1561123860 c:\users\compa\desktop\utn\labo i\ariasmarianorsp\utn.h
+
+1563461597 c:\users\compa\desktop\utn\labo i\ariasmarianorsp\linkedlist.h
+
+1563463942 c:\users\compa\desktop\utn\labo i\ariasmarianorsp\entidades.h
+
+1563461852 source:c:\users\compa\desktop\utn\labo i\ariasmarianorsp\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1563463906 source:c:\users\compa\desktop\utn\labo i\ariasmarianorsp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1562881842 source:c:\users\compa\desktop\utn\labo i\ariasmarianorsp\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+

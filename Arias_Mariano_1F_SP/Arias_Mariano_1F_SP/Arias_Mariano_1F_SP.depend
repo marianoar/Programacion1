@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1563161688 source:e:\arias_mariano_1f_sp\arias_mariano_1f_sp\dominio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1561123860 e:\arias_mariano_1f_sp\arias_mariano_1f_sp\utn.h
+
+1563155588 e:\arias_mariano_1f_sp\arias_mariano_1f_sp\linkedlist.h
+
+1563161688 e:\arias_mariano_1f_sp\arias_mariano_1f_sp\dominio.h
+
+1563161406 source:e:\arias_mariano_1f_sp\arias_mariano_1f_sp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1561417378 source:e:\arias_mariano_1f_sp\arias_mariano_1f_sp\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1563161584 source:e:\arias_mariano_1f_sp\arias_mariano_1f_sp\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1562876030 source:g:\arias_mariano_1f_sp\arias_mariano_1f_sp\dominio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1561123860 g:\arias_mariano_1f_sp\arias_mariano_1f_sp\utn.h
+
+1562873260 g:\arias_mariano_1f_sp\arias_mariano_1f_sp\linkedlist.h
+
+1562876030 g:\arias_mariano_1f_sp\arias_mariano_1f_sp\dominio.h
+
+1562873226 source:g:\arias_mariano_1f_sp\arias_mariano_1f_sp\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1561417378 source:g:\arias_mariano_1f_sp\arias_mariano_1f_sp\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1562876682 source:g:\arias_mariano_1f_sp\arias_mariano_1f_sp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1561417378 source:c:\users\compa\desktop\utn\labo i\arias_mariano_1f_sp\arias_mariano_1f_sp\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1561123860 c:\users\compa\desktop\utn\labo i\arias_mariano_1f_sp\arias_mariano_1f_sp\utn.h
+
+1563419261 c:\users\compa\desktop\utn\labo i\arias_mariano_1f_sp\arias_mariano_1f_sp\linkedlist.h
+
+1563422098 c:\users\compa\desktop\utn\labo i\arias_mariano_1f_sp\arias_mariano_1f_sp\dominio.h
+
+1563419577 source:c:\users\compa\desktop\utn\labo i\arias_mariano_1f_sp\arias_mariano_1f_sp\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1563419318 source:c:\users\compa\desktop\utn\labo i\arias_mariano_1f_sp\arias_mariano_1f_sp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+
+1563419662 source:c:\users\compa\desktop\utn\labo i\arias_mariano_1f_sp\arias_mariano_1f_sp\dominio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"dominio.h"
+

@@ -119,3 +119,43 @@
 	"LinkedList.h"
 	"entidades.h"
 
+1571087926 source:g:\practica final\arias_mariano rsp fin\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571095626 g:\practica final\arias_mariano rsp fin\utn.h
+
+1571082764 g:\practica final\arias_mariano rsp fin\linkedlist.h
+
+1571168044 g:\practica final\arias_mariano rsp fin\entidades.h
+
+1571169174 source:g:\practica final\arias_mariano rsp fin\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571095626 source:g:\practica final\arias_mariano rsp fin\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571169152 source:g:\practica final\arias_mariano rsp fin\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+

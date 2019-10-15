@@ -82,7 +82,7 @@ int main()
             break;
             case 5:
                 if(flag){
-                    ll_sort(listaEnvios, ordenar, 1);
+                    ll_sort(listaEnvios, ordenarXCosto, 1);
                     printerList(listaEnvios);
 
                 }else{

@@ -280,6 +280,7 @@ printf("\n %5s %10s %20s %10s","Id","Producto","Km", "Entrega");
 void setCosto(void* element){
 
     int aux=((eEnvio*)element)->km;
+
     int costoFijo=((eEnvio*)element)->tipo;
     if(aux<=50){
         ((eEnvio*)element)->costo=aux*67;
@@ -294,13 +295,16 @@ void setCosto(void* element){
         ((eEnvio*)element)->costo=((eEnvio*)element)->costo+80;
     }
 }
-/*
-int ordenar (void* element, void* elementB){
 
-int aux=((eEnvio*)element;
-int aux2=((eEnvio*)elementB;
+int ordenarXProducto (void* element, void* elementB){
 
+    return strcmp(((eEnvio*)element)->producto,((eEnvio*)elementB)->producto);
 
-    return 1;
+}
 
-}*/
+int ordenarXCosto(void* element, void* elementB){
+
+    return (((eEnvio*)element)->costo<((eEnvio*)elementB)->costo);
+
+}
+

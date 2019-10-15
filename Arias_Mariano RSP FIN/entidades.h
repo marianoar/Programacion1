@@ -32,7 +32,8 @@ void printerList (LinkedList* lista);
 void printerListSeteada (LinkedList* lista);
 void setCosto(void* element);
 
-int ordenar (void* element, void* elementB);
+int ordenarXProducto (void* element, void* elementB);
+int ordenarXCosto(void* element, void* elementB);
 
 
 /*

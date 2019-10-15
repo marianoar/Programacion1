@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1563493256 source:e:\arias_mariano rsp fin\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1561123860 e:\arias_mariano rsp fin\utn.h
+
+1563492660 e:\arias_mariano rsp fin\linkedlist.h
+
+1563492522 e:\arias_mariano rsp fin\entidades.h
+
+1563493256 source:e:\arias_mariano rsp fin\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1563486286 source:e:\arias_mariano rsp fin\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1563493150 source:e:\arias_mariano rsp fin\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571096078 source:c:\users\compa\desktop\utn\programacion y labo i\arias_mariano rsp fin\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571095624 c:\users\compa\desktop\utn\programacion y labo i\arias_mariano rsp fin\utn.h
+
+1571082762 c:\users\compa\desktop\utn\programacion y labo i\arias_mariano rsp fin\linkedlist.h
+
+1571095052 c:\users\compa\desktop\utn\programacion y labo i\arias_mariano rsp fin\entidades.h
+
+1571087924 source:c:\users\compa\desktop\utn\programacion y labo i\arias_mariano rsp fin\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571096370 source:c:\users\compa\desktop\utn\programacion y labo i\arias_mariano rsp fin\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571095624 source:c:\users\compa\desktop\utn\programacion y labo i\arias_mariano rsp fin\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571087926 source:e:\practica final\arias_mariano rsp fin\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571095626 e:\practica final\arias_mariano rsp fin\utn.h
+
+1571082764 e:\practica final\arias_mariano rsp fin\linkedlist.h
+
+1571144346 e:\practica final\arias_mariano rsp fin\entidades.h
+
+1571095626 source:e:\practica final\arias_mariano rsp fin\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571144480 source:e:\practica final\arias_mariano rsp fin\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
+1571144334 source:e:\practica final\arias_mariano rsp fin\entidades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"LinkedList.h"
+	"entidades.h"
+
